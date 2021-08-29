@@ -26,6 +26,7 @@ body {
 
 .image-container {
 	overflow: hidden;
+	width: -webkit-fill-available;
 }
 
 .image-container img {
@@ -311,6 +312,7 @@ header .mobile {
 #filters-section .images-container {
 	max-width: 100%;
 	padding: 0 1%;
+	display: flex;
 }
 
 @media only screen and (max-width: 760px) {
@@ -345,8 +347,16 @@ header .mobile {
 
 /* Quotes Section */
 
+.quote {
+	margin-right: 30px;
+}
+
 #quotes-section {
 	background-color: #f3f3f3;
+	margin: 80px;
+	font-size: 30px;
+	font-family: Palatica-Italic;
+	line-height: 1.1;
 }
 
 #quotes-section content {
@@ -360,6 +370,10 @@ header .mobile {
 	line-height: 1.1;
 	font-style: italic;
 	color: #4a4a4a;
+}
+
+quote-citation img {
+	margin-left: 30px;
 }
 
 #quotes-section quote-citation {
